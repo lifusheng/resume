@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/intro.css"/>
+    <link rel="stylesheet" href="css/intro-animate.css"/>
+</head>
+<body>
+    <header class="top-header">
+        <div class="container">
+            <div class="top-header-left">
+                <a href="intro.html" class="logo-pic"></a>
+                <div class="nav-menu"></div>
+                <div class="nav-list">
+                    <ul class="bounceInRight">
+                        <li><a href="#floor-1">楼层1</a></li>
+                        <li><a href="#floor-2">楼层2</a></li>
+                        <li><a href="#floor-3">楼层3</a></li>
+                        <li><a href="#floor-4">楼层4</a></li>
+                        <li><a href="#floor-5">楼层5</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top-header-right">
+                <div class="qq-wrap">
+                    <div class="icon qq-icon"></div>
+                    <div class="qr-code-wrap qq-pic">
+                        <div class="icon-angle"></div>
+                        <div class="qr-code">
+                            <img src="img/qrcode-qq.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wechat-wrap">
+                    <div class="icon wechat-icon"></div>
+                    <div class="qr-code-wrap wechat-pic">
+                        <div class="icon-angle"></div>
+                        <div class="qr-code">
+                            <img src="img/qrcode-wechat.png" alt=""/>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-wrap">
+                    <div class="icon blog-icon"></div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section class="floor floor-1">
+        <div class="f1-figure-pic">
+            <img src="img/monkey.png" alt=""/>
+        </div>
+    </section>
+</body>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/intro.js"></script>
+
+
+</html>

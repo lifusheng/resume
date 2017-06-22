@@ -1,0 +1,207 @@
+
+
+
+.floor-2{
+  background-image: url(../img/winter.jpg);
+}
+
+
+.content {
+  position: absolute;
+  top:0;left: 0; bottom: 0;right: 0;
+  margin: auto;
+  width: 100%;
+  height: 70vh;
+  max-width: 1200px;
+  background-color: #000;
+  /*padding: 30px;*/
+  overflow: hidden;
+  /*display: none;*/
+}
+.slider{
+  height: inherit;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+
+  left: -100%;
+}
+.trans-select{
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slide-darkbg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.slide-darkbg:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 15, 39, 0.53);
+}
+.slide-sty{
+  position: absolute;
+  display: -webkit-box;   /*是老规范，要兼顾古董机子就加上它。*/
+  display: -ms-flexbox;
+  display: flex;            /*是新规范，老机子不支持的*/
+  width: 100%; height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+}
+.slide-text-wrapper {
+  z-index: 15;
+}
+.slide-letter{
+  top: 0px;left: 0px;
+  font-size: 30vw;
+  font-weight: 800;
+  color: #000;
+  z-index: 2;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+}
+.bg-1{
+  background: url("../img/pro/bdn-pro.jpg") center center no-repeat;
+}
+.bg-2{
+  background: url("../img/pro/hwd-pro.jpg") center center no-repeat;
+}
+.bg-3{
+  background: url("../img/pro/elong-pro.jpg") center center no-repeat;
+}
+
+.slide-text {
+  font-size: 8vw;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.slide-text:nth-child(odd) {
+  z-index: 2;
+}
+.slide-text:nth-child(even) {
+  z-index: 1;
+}
+
+.nav {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  list-style-type: none;
+  z-index: 10;
+}
+.nav li{
+  float: left;
+}
+.nav-slide {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-slide:hover:after {
+  -webkit-transform: translate(-50%, -50%) scale(1, 1);
+  transform: translate(-50%, -50%) scale(1, 1);
+  opacity: 1;
+}
+.nav-slide:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%) scale(0, 0);
+  transform: translate(-50%, -50%) scale(0, 0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.nav-slide-1 {
+  margin-left: 0;
+}
+
+.nav-active:after {
+  -webkit-transform: translate(-50%, -50%) scale(1, 1);
+  transform: translate(-50%, -50%) scale(1, 1);
+  opacity: 1;
+}
+
+.side-nav {
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  top: 0;
+  z-index: 20;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.side-nav:hover {
+  opacity: .5;
+}
+.side-nav--right {
+  right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #eed7ff 100%);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #eed7ff 100%);
+}
+.side-nav--left {
+  left: 0;
+  background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0) 0%, #eed7ff 100%);
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, #eed7ff 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

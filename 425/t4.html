@@ -1,0 +1,86 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <style type="text/css">
+        .boomCont{
+            width: 400px;
+            height: 220px;
+            position: absolute;
+            top: 0px;right: 0px;
+            bottom: 0px;left: 0px;
+            margin: auto;
+            /*overflow: hidden;*/
+            /*border: 1px solid red;*/
+            /*display: flex;*/
+        }
+        .test-img{
+            width: 400px;
+            position: absolute;
+            display: block;
+            z-index: 10;
+        }
+        .item-ball{
+            position: relative;
+            top: 0px;left: 0px;
+            float: left;
+            background: url("test-img/t1.jpg");
+            transition:all 1.8s linear;
+            /*background-size:500px 400px;*/
+            /*background-color: black;*/
+            border-radius: 50%;
+        }
+        .item-ball:nth-child(1){
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <div class="boomCont" id="boomCont">
+            <div class="item-ball"></div>
+            <img class="test-img" src="test-img/t1.jpg" alt="">
+        </div>
+
+</body>
+<script src="js/jquery-1.11.3.js"></script>
+<script type="text/JavaScript">
+    var box=document.getElementById('boomCont'),
+         ball=document.getElementsByClassName('item-ball')[0],
+         frag=document.createDocumentFragment(),
+         dia=10,   //直径
+         //中心点坐标
+         xC= box.getBoundingClientRect().left+box.getBoundingClientRect().width/ 2,
+         yC= box.getBoundingClientRect().top+box.getBoundingClientRect().height/ 2,
+         rNum=parseInt(box.getBoundingClientRect().height/dia),
+         cNum=parseInt(box.getBoundingClientRect().width/dia) ;
+    ball.style.width=dia+'px';ball.style.height=dia+'px';
+    for(var r=0;r<rNum;r++){
+        for (var c=0;c<cNum;c++){
+            var cl=ball.cloneNode(true);
+            ball.style.backgroundPosition='-'+c*dia+'px '+'-'+r*dia+'px';
+            frag.appendChild(cl);
+        }
+    }
+    box.appendChild(frag);
+    function randNum(min,max){
+        return (Math.random()*(max - min)+min);
+    }
+    function disappear(){
+        console.log(xC,yC);
+        $('.test-img').fadeOut(1000);
+      $('.item-ball').each(function(){
+          $(this).animate({
+              'top':randNum(-110,110)+'px',
+              'left':randNum(-200,200)+'px',
+              'transform':'scale('+randNum(0.3,1.8)+')',
+              '-moz-transform':'scale('+randNum(0.3,1.8)+')',
+              'opacity':0
+          });
+      });
+    }
+//    disappear();
+
+</script>
+</html>

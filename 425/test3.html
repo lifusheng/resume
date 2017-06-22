@@ -1,0 +1,31 @@
+
+
+<div id="d0">
+
+</div>
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+    var startSalary = function() {
+        var box = document.getElementById('d1'),
+                frag = document.createDocumentFragment(),
+                ball = document.getElementsByClassName('h')[0];
+
+        for (var r = 0; r < 40; r++) {
+        for (var c = 0; c < 40; c++) {
+            var cl = ball.cloneNode(true);
+
+//        console.log('');  //中断
+            //box.appendChild(cl);
+            ball.style.color ='#f00';
+            frag.appendChild(cl);
+        }}
+        box.appendChild(frag);
+    };
+    $('#d0').load('tt.html',function(){
+        startSalary();
+    });
+//
+</script>

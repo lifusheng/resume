@@ -1,0 +1,153 @@
+
+
+
+/* header start*/
+@topbg: transparent;
+
+.logo-pic,.nav-menu,.qq-wrap .qq-icon,
+.wechat-wrap .wechat-icon,.blog-wrap .blog-icon,
+.icon-angle{
+  background: url("../img/my-iconlist.png") no-repeat;
+}
+
+.top-header{
+
+  width: 100%;
+  height: 100px;
+  background: @topbg;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 9999;
+  .container-wrap{
+    //margin-top: 2vw;
+    padding: 2vw;
+    display: flex;
+    justify-content: space-between;
+    .logo-pic{
+      display: block;
+      width: 48px;
+      height: 29px;
+      background-position: 0 -10px;
+      &:hover{
+        background-position: -50px -10px;
+      }
+    }
+    .nav-list{
+      padding-left: 20px;
+      overflow: hidden;
+      ul{
+        display: flex;
+        margin-top: 0px;
+        li{
+          a{
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bolder;
+            color: #fff;
+          }
+          &:hover a{
+            color: red;
+          }
+        }
+      }
+
+    }
+    .top-header-left{
+      display: flex;
+      padding-top: 10px;
+      .nav-menu{
+        width: 20px;
+        height: 28px;
+        cursor:pointer;
+        margin-left: 20px;
+        background-position: 0 -38px;
+        &:hover{
+          background-position: -20px -38px;
+        }
+      }
+    }
+
+    .top-header-right{
+      display: flex;
+      .icon{
+        width: 26px;
+        height: 26px;
+        cursor:pointer;
+      }
+      &>div{
+        margin-right: 20px;
+      }
+
+      .qq-wrap{
+        position: relative;
+        .qq-icon{
+          background-position: 0 -239px;
+        }
+      }
+      .wechat-wrap{
+        position: relative;
+        .wechat-icon{
+          background-position: -55px -239px;
+        }
+      }
+      .blog-wrap .blog-icon{
+        background-position: -90px -239px;
+      }
+      .qr-code-wrap{
+        position: absolute;
+        top: 26px;
+        width: 165px;
+        height: 165px;
+        display: none;
+      }
+      .qq-pic{
+        left: -73px;
+      }
+      .wechat-pic{
+        left: -68px;
+      }
+      .wechat-wrap:hover .wechat-pic{
+        display: block;
+      }
+      .qq-wrap:hover .qq-pic{
+        display: block;
+      }
+      .icon-angle{
+        width: 31px;
+        height: 20px;
+        position: absolute;
+        top:0px;left:40%;
+        z-index: 10;
+        background-position: -29px -272px;
+      }
+      .qr-code{
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #FFF;
+        position: absolute;
+        top: 17px;left: 0px;
+      }
+    }
+    .navbar-default{
+      background-color: @topbg;
+      .logo-pic{
+        margin: 9px 10px;
+      }
+      #myCollapse{
+        ul{
+          width: 30%;
+          margin-left: 70%;
+        }
+        img{
+          width: 50%;
+          float: left;
+          margin-top: 20px;
+          margin-left: 10%;
+        }
+      }
+    }
+  }
+}
+
+/* header end*/

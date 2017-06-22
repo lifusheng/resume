@@ -1,0 +1,194 @@
+.floor-3 {
+  background-image: url(../img/winter.jpg);
+}
+/*���� start*/
+@keyframes html-ani {
+  from {
+    width: 0%;
+    background-color: #ddd;
+  }
+  to {
+    width: 83.5%;
+    background-color: #1E4A95;
+  }
+}
+@keyframes css-ani {
+  from {
+    width: 0%;
+    background-color: #ddd;
+  }
+  to {
+    width: 83.5%;
+    background-color: #1E4A95;
+  }
+}
+@keyframes js-ani {
+  from {
+    width: 0%;
+    background-color: #ddd;
+  }
+  to {
+    width: 66.8%;
+    background-color: #4E5871;
+  }
+}
+@keyframes jq-ani {
+  from {
+    width: 0%;
+    background-color: #ddd;
+  }
+  to {
+    width: 66.8%;
+    background-color: #4E5871;
+  }
+}
+@keyframes php-ani {
+  from {
+    width: 0%;
+    background-color: #ddd;
+  }
+  to {
+    width: 50.1%;
+    background-color: #4E5871;
+  }
+}
+@keyframes nodejs-ani {
+  from {
+    width: 0%;
+    background-color: #ddd;
+  }
+  to {
+    width: 50.1%;
+    background-color: #4E5871;
+  }
+}
+@keyframes ng-ani {
+  from {
+    width: 0%;
+    background-color: #ddd;
+  }
+  to {
+    width: 50.1%;
+    background-color: #4E5871;
+  }
+}
+@keyframes mysql-ani {
+  from {
+    width: 0%;
+    background-color: #ddd;
+  }
+  to {
+    width: 33.4%;
+    background-color: #4E5871;
+  }
+}
+@keyframes ps-ani {
+  from {
+    width: 0%;
+    background-color: #ddd;
+  }
+  to {
+    width: 16.7%;
+    background-color: #4E5871;
+  }
+}
+.html-rate {
+  animation: html-ani 3s infinite 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.css-rate {
+  animation: css-ani 3s infinite 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.js-rate {
+  width: 0%;
+  animation: js-ani 3s infinite 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.jq-rate {
+  animation: jq-ani 3s infinite 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.php-rate {
+  animation: php-ani 3s infinite 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.nodejs-rate {
+  animation: nodejs-ani 3s infinite 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.ng-rate {
+  animation: ng-ani 3s infinite 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.mysql-rate {
+  animation: mysql-ani 3s infinite 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.ps-rate {
+  animation: ps-ani 3s infinite 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.tec-comm {
+  position: relative;
+  height: 15px;
+  margin-bottom: 15px;
+}
+.tec-comm span {
+  display: inline-block;
+  font-weight: 900;
+  padding-top: 3px;
+  font-size: 1rem;
+  text-align: right;
+}
+.tec-bg {
+  width: 100%;
+  background-color: #d1d1d1;
+}
+.tc {
+  position: absolute;
+  top: 8px;
+  left: 6em;
+  height: inherit;
+  border-radius: 8px;
+}
+.tec-box {
+  position: relative;
+  width: 70%;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+}
+.tec-info {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 6em;
+}
+.tec-info img {
+  width: 2.2vw;
+  height: 2.2vw;
+}
+.tec-info th {
+  font-size: 12px;
+  text-align: center;
+}
+.tec-info td {
+  text-align: center;
+}
+.tec-grading {
+  font-weight: 900;
+  position: relative;
+  left: 50%;
+  margin-bottom: 30px;
+}
+/*���� end*/

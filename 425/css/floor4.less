@@ -1,0 +1,213 @@
+
+
+.floor-4{
+  background-image: url(../img/winter.jpg);
+}
+
+/*跳动的红心 start*/
+
+@keyframes redh{
+  0%,100%{
+    transform:scale(0.0);
+    -moz-transform:scale(0.0);
+    -o-transform:scale(0.0);
+    -webkit-transform:scale(0.0);
+    -ms-transform:scale(0.0);
+    opacity:0
+  }
+  50%{
+    transform:scale(1.0);
+    -moz-transform:scale(1.0);
+    -o-transform:scale(1.0);
+    -webkit-transform:scale(1.0);
+    -ms-transform:scale(1.0);
+    opacity:1
+  }
+
+}
+
+.redheart.trans{
+  -webkit-animation:xguide_down 4.0s infinite ease-in-out;
+  -moz-animation:xguide_down 4.0s infinite ease-in-out;
+  -o-animation:xguide_down 4.0s infinite ease-in-out;
+  animation:redh 4.0s infinite ease-in-out;
+}
+.redheart.arrow-1{
+  animation-delay:-2.0s;
+  -webkit-animation-delay:-2.0s;
+  -moz-animation-delay:-2.0s;
+  -o-animation-delay:-2.0s
+}
+
+@rhsize:200px;
+@rhsize-l:400px;
+
+.rh-box{
+  position: relative;
+  left:50%;top: 50%;
+  transform: translate(-50%,-50%);
+  .js-redheart{
+    width: inherit;
+    height: inherit;
+    .redheart{
+      width: inherit;
+      height: inherit;
+      display:inline-block;
+      position:absolute;
+      top: 0px; left: -2px;
+      cursor:pointer;
+      opacity:.7;
+    }
+  }
+}
+.boomCont{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0px;left: -7px;
+}
+.vis-hid{
+  visibility: hidden;
+}
+.test-img{
+  width: inherit;
+  height: inherit;
+  display: block;
+  position: absolute;
+  left: 0px;
+  overflow: hidden;
+  /*display: none;*/
+  z-index: 10;
+}
+.js-img-mask {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  left: -7px;
+  transition: all .8s linear;
+  overflow: hidden;
+}
+.little-img{
+  transform: scale(0.04);
+}
+.item-ball{
+  position: relative;
+  top: 0px;left: 0px;
+  float: left;
+  background: url("../img/redheart.png") no-repeat;
+  transition:all 1.8s linear;
+  border-radius: 50%;
+}
+.item-ball:nth-child(1){
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .rh-box {
+    width: @rhsize;
+    height: @rhsize;
+  }
+  .item-ball{
+    background-size: @rhsize @rhsize;
+  }
+  .num{
+    background:url(../img/num-20.png) top center repeat-y;
+    width:20px;height:38px;float:left;margin-right:6px;
+    margin-left: 10%;
+    margin-top: -4px;
+  }
+  .num-w-grow{
+    width: 300px !important;
+  }
+}
+@media (min-width: 768px) {
+  .rh-box {
+    width: @rhsize-l;
+    height: @rhsize-l;
+  }
+  .item-ball{
+    background-size: @rhsize-l @rhsize-l;
+  }
+  .num{
+    background:url(../img/num-90.png) top center repeat-y;
+    width:80px;height:113.4px;float:left;margin-right:6px;
+  }
+  .num-w-grow{
+    width: 430px !important;
+  }
+}
+
+/*跳动的红心 end*/
+
+/*工资条  start*/
+
+.num_box{
+  height:148px;
+  width:0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: transparent;
+  overflow:hidden;
+  transition:all .8s linear 2.5s;
+}
+
+.hope-salary{
+  font-weight: 900;
+  position: relative;
+  left:50%;
+  text-align: center;
+  color: red;
+  /*top: 30%;*/
+  transform: translate(-50%,-50%);
+  /*margin-bottom: 80px;*/
+}
+
+/*工资条  end*/
+
+
+/*猩猩 start */
+.popup-container{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0,-50%);
+  -moz-transform: translate(0,-50%);
+  z-index: 99;
+  //width: 36vw;
+  //height: 19vw;
+  width: 520px;
+  height: 270px;
+  background-color: transparent;
+  overflow: hidden;
+}
+.monkey-img{
+  width: inherit;
+  height: inherit;
+}
+.img-flex{
+  position: absolute;
+  height: 100%;
+  ul{
+    font-size: 0;
+    height: 100%;
+    li{
+      display: block;
+      background-repeat: no-repeat;
+      -moz-background-repeat: no-repeat;
+      float: left;
+      position: relative;
+
+    }
+  }
+}
+.monkey-popup-container{
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  display: none;
+}
+
+/*猩猩 end */
